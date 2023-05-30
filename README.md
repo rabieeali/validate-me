@@ -1,6 +1,6 @@
 # @alirabiee/validate-me
 
-`@alirabiee/validate-me` is a lightweight validation library for JavaScript and TypeScript that provides various utility functions for validating common data types.
+`@alirabiee/validate-me` is a lightweight validation library for JavaScript and TypeScript that provides various utility functions for validating common data types. Customized for Iranian Developers
 
 ## Installation
 
@@ -13,20 +13,23 @@ npm install @alirabiee/validate-me
 **Available Functions**
 
 ```
-isEmail(email: string): boolean
+isEmail(str: string): boolean
 // Checks if the given string is a valid email address.
 
-isEmpty(input: string): boolean
+isEmpty(str: string): boolean
 // Checks if the given string is empty (has zero length).
 
-hasLength(input: string, minLength: number = 0, maxLength?: number): boolean
+hasLength(str: string, minLength: number = 0, maxLength?: number): boolean
 // Checks if the given string has a length within the specified range.
 
-hasAllItems(input: string, items: string[]): boolean
+hasAllItems(str: string, items: string[]): boolean
 // Checks if the given string contains all the specified items.
 
-isPersianPhoneNumber(phoneNumber: string): boolean
+isPersianPhoneNumber(str: string): boolean
 // Checks if the given string is a valid Persian phone number.
+
+isFarsi(str: string): boolean
+// Checks if the given string is fully in Persian(Farsi) Language.
 ```
 
 ## Usage
@@ -38,7 +41,9 @@ import {
     hasLength,
     isEmpty,
     hasAllItems,
-    isPersianPhoneNumber } from '@alirabiee/validate-me';
+    isPersianPhoneNumber,
+    isFarsi
+         } from '@alirabiee/validate-me';
 
 
 
@@ -47,6 +52,15 @@ isEmpty('I am a string!') // false
 hasLength('I am a string!', 3, 82) // true
 hasAllItems('I am a string!', ['a', 'G']) // false
 isPersianPhoneNumber('09125345997') // true
+isFarsi('Salam Donya') // false
+isFarsi('سلام دنیا') // true
+```
+**note**
+you can ignore characters by passing the second argument
+```
+isFarsi('!سلام دنیا') // false
+isFarsi('!سلام دنیا' , ['!']) // true
+
 ```
 
 ## Contributing

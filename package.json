@@ -1,6 +1,6 @@
 {
   "name": "@alirabiee/validate-me",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "validation library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,11 @@
     "prepare": "npm run build"
   },
   "keywords": [
-    "validation"
+    "validation",
+    "validate",
+    "persian",
+    "iranian",
+    "iran"
   ],
   "author": "Ali Rabiee",
   "license": "ISC",
