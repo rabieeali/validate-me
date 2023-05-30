@@ -2,9 +2,9 @@
   "name": "@alirabiee/validate-me",
   "version": "1.0.1",
   "description": "validation library",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc --outDir dist"
   },
   "keywords": [
     "validation"
@@ -32,5 +32,9 @@
   "bugs": {
     "url": "https://github.com/rabieeali/validate-me/issues"
   },
-  "homepage": "https://github.com/rabieeali/validate-me#readme"
+  "homepage": "https://github.com/rabieeali/validate-me#readme",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
 }
