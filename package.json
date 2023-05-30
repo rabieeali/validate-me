@@ -1,5 +1,5 @@
 {
-  "name": "validate-me",
+  "name": "@alirabiee/validate-me",
   "version": "1.0.1",
   "description": "validation library",
   "main": "index.ts",
