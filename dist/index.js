@@ -7,8 +7,12 @@ function isEmail(email) {
 }
 exports.isEmail = isEmail;
 function hasLength(input, minLength, maxLength) {
+    if (minLength === void 0) { minLength = 0; }
     var inputLength = input.length;
-    return inputLength >= minLength && inputLength <= maxLength;
+    if (maxLength !== undefined) {
+        return inputLength >= minLength && inputLength <= maxLength;
+    }
+    return inputLength >= minLength;
 }
 exports.hasLength = hasLength;
 function isEmpty(input) {

@@ -2,10 +2,14 @@ function isEmail(email: string): boolean {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
-function hasLength(input: string, minLength: number, maxLength: number): boolean {
+function hasLength(input: string, minLength: number = 0, maxLength?: number): boolean {
     const inputLength = input.length;
-    return inputLength >= minLength && inputLength <= maxLength;
-}
+    if (maxLength !== undefined) {
+      return inputLength >= minLength && inputLength <= maxLength;
+    }
+    return inputLength >= minLength;
+  }
+  
 function isEmpty(input: string): boolean {
     return input.length === 0;
 }
