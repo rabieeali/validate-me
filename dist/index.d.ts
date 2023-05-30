@@ -3,4 +3,5 @@ declare function hasLength(input: string, minLength?: number, maxLength?: number
 declare function isEmpty(input: string): boolean;
 declare function hasAllItems(input: string, items: string[]): boolean;
 declare function isPersianPhoneNumber(input: string): boolean;
-export { isPersianPhoneNumber, hasAllItems, hasLength, isEmail, isEmpty };
+declare function isFarsi(input: string, ignoredChars?: string[]): boolean;
+export { isFarsi, isPersianPhoneNumber, hasAllItems, hasLength, isEmail, isEmpty };
