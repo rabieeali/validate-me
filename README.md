@@ -10,30 +10,35 @@ You can install `@alirabiee/validate-me` using npm:
 npm install @alirabiee/validate-me
 ```
 
-Available Functions
+**Available Functions**
 
+```
 isEmail(email: string): boolean<br>
-Checks if the given string is a valid email address.
+// Checks if the given string is a valid email address.
 
 isEmpty(input: string): boolean<br>
-Checks if the given string is empty (has zero length).
+// Checks if the given string is empty (has zero length).
 
 hasLength(input: string, minLength: number = 0, maxLength?: number): boolean<br>
-Checks if the given string has a length within the specified range.
+// Checks if the given string has a length within the specified range.
 
 hasAllItems(input: string, items: string[]): boolean<br>
-Checks if the given string contains all the specified items.
+// Checks if the given string contains all the specified items.
 
 isPersianPhoneNumber(phoneNumber: string): boolean<br>
-Checks if the given string is a valid Persian phone number.
+// Checks if the given string is a valid Persian phone number.
+```
 
-
-Usage
-Importing Functions
+**Usage**
 You can import individual validation functions or multiple functions at once:
 
 ```
-import { isEmail, hasLength, isEmpty, hasAllItems, isPersianPhoneNumber } from '@alirabiee/validate-me';
+import { 
+    isEmail,
+    hasLength,
+    isEmpty,
+    hasAllItems,
+    isPersianPhoneNumber } from '@alirabiee/validate-me';
 
 
 
