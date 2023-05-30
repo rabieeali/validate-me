@@ -1,6 +1,6 @@
 {
-  "name": "@alirabiee/validate-me",
-  "version": "1.0.3",
+  "name": "validate-me",
+  "version": "1.0.4",
   "description": "validation library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
