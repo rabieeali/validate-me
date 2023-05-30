@@ -8,6 +8,7 @@ You can install `@alirabiee/validate-me` using npm:
 
 ```bash
 npm install @alirabiee/validate-me
+```
 
 Available Functions
 
@@ -44,7 +45,8 @@ isPersianPhoneNumber('09125345997') // true
 ```
 
 ## Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request on the GitHub repository.
+Contributions are welcome! If you find any issues or have suggestions for improvement,
+feel free to open an issue or submit a pull request on the GitHub repository.
 
 ## License
 This project is licensed under the ISC License.
