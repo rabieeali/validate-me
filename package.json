@@ -1,10 +1,9 @@
 {
-  "name": "@alirabiee/validate-me",
+  "name": "validate-me",
   "version": "1.0.0",
   "description": "validation library",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
     "build": "tsc"
   },
   "keywords": [
